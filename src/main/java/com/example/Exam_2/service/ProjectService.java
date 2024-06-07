@@ -46,4 +46,12 @@ public class ProjectService {
     public void deleteProject(Long id) {
         projectRepository.deleteById(id);
     }
+
+    public Project findByName(String projetName) {
+        return projectRepository.findByName(projetName);
+    }
+
+    public void saveProjet(Project projet) {
+         projectRepository.save(projet);
+    }
 }

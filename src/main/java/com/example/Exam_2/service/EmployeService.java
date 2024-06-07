@@ -37,4 +37,7 @@ public class EmployeService {
         employeRepository.deleteById(id);
     }
 
+    public void saveEmploye(Employe employe) {
+        employeRepository.save(employe);
+    }
 }
